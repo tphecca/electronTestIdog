@@ -38,9 +38,13 @@ module.exports = function(app, BrowserWindow, Menu, globalShortcut, win, path)
 function keyEvents(app, globalShortcut)
 {
   //Event for quitting application
-  const quit = globalShortcut.register('CmdOrCtrl+C', () => {
+  globalShortcut.register('CmdOrCtrl+C', () => {
     app.quit();
   });
+  //So to setup a keyEvent do what I do below and then type the accelerator ('CmdOrCtrl+' desired other keys)
+  //And then the callback function aka create a function like you see below () => {}, lastly, put desired action on press of keys
+  //globalShortcut.register('CmdOrCtrl+Y', () => {
+  //});
 }
 
 //Creating a child window
