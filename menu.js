@@ -20,14 +20,14 @@ module.exports = function(app, BrowserWindow, Menu, globalShortcut, win, path)
               { label: 'Exit', accelerator: 'CmdOrCtrl+C', click() {app.quit()} }]
   }, 
   //File
-  //Test Item
+  //Help
   {  
     label: 'Help',
     submenu: [{ label: 'About', click(){ let child = new BrowserWindow({ width: 480, height: 360, modal: true, show: false, autoHideMenuBar: true, parent: win, title: 'About Isolite Bot System', icon: path.join(__dirname, 'assets/icons/isolite.png')})
                                              child.loadURL('')
                                              child.show()} }]
   }
-  //Test Item
+  //Help
 ]
 
   const menu = Menu.buildFromTemplate(template)
