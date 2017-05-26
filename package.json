@@ -1,0 +1,15 @@
+{
+  "name": "ibs",
+  "version": "0.0.1",
+  "description": "This is an application to make and manage basic stuff a bot has: Custom Chat Commands, point system, among many other things. It is developed in HTML, Css, and JS",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^1.6.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "Idogftw, DrogonMar, Solace",
+  "license": ""
+}
